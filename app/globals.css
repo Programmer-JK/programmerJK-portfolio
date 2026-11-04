@@ -6,7 +6,7 @@ body{margin:0}
 .statgrid{display:grid;grid-template-columns:minmax(0,1fr);padding:1px}
 @media (min-width:640px){.statgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (min-width:1024px){.statgrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
-.root *{box-sizing:border-box}
+.root *{box-sizing:border-box;word-wrap:break-word}
 .wrap{max-width:1360px;margin:0 auto;padding-inline:clamp(16px,4vw,48px)}
 .mono{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
 .wide{font-family:'Archivo','IBM Plex Sans KR',sans-serif;font-stretch:125%;font-weight:800}
