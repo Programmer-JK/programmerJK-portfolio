@@ -55,7 +55,7 @@ body {
 
 .root * {
 	box-sizing: border-box;
-	word-wrap: keep-all;
+	word-break: keep-all;
 }
 
 .wrap {
