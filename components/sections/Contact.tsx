@@ -4,7 +4,6 @@ import type { PortfolioState } from "@/lib/usePortfolio";
 export default function Contact({ v }: { v: PortfolioState }) {
   return (
     <>
-
       <section id="contact" style={{ marginTop: "120px", background: "var(--ink)", color: "var(--bg)" }}>
         <div className="wrap" style={{ paddingBlock: "96px 48px" }}>
           <p className="mono" style={{ margin: "0 0 24px" }}>05 · Career direction</p>

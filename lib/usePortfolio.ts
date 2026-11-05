@@ -13,7 +13,6 @@ export const PROJECT_IDS = ["archive", "ar", "im", "mr", "linky", "moim", "ani"]
 
 // 작은 공용 팝업(SmallProjectModal)을 쓰는 프로젝트와 상단 라벨
 const SMALL_MODAL_LABELS: Record<string, string> = {
-  archive: "01 · Our Little Archive",
   linky: "05 · 링키라운지 공식 홈페이지",
   moim: "06 · 모임 성격 진단 웹앱",
   ani: "07 · Aniwhere",
@@ -90,6 +89,8 @@ export function usePortfolio() {
       pmOpen: !!SMALL_MODAL_LABELS[proj],
       pmLabel: SMALL_MODAL_LABELS[proj] || "",
       pmWidth: proj === "archive" ? "1080px" : "900px",
+      laOpen: proj === "archive",
+      closeLa: closeP,
       arOpen: proj === "ar",
       closeAr: closeP,
       mrOpen: proj === "mr",

@@ -11,10 +11,11 @@ import Career from "@/components/sections/Career";
 import SideProjects from "@/components/sections/SideProjects";
 import Skills from "@/components/sections/Skills";
 import Contact from "@/components/sections/Contact";
-import ImpacModal from "@/components/sections/ImpacModal";
-import SmallProjectModal from "@/components/sections/SmallProjectModal";
-import ArcadeModal from "@/components/sections/ArcadeModal";
-import MealModal from "@/components/sections/MealModal";
+import ImpacModal from "@/components/modals/ImpacModal";
+import SmallProjectModal from "@/components/modals/SmallProjectModal";
+import ArcadeModal from "@/components/modals/ArcadeModal";
+import MealModal from "@/components/modals/MealModal";
+import LittleArchiveModal from "@/components/modals/LittleArchiveModal";
 
 export default function Page() {
   const v = usePortfolio();
@@ -30,6 +31,7 @@ export default function Page() {
       <Skills v={v} />
       <Contact v={v} />
       <ImpacModal v={v} />
+      <LittleArchiveModal v={v} />
       <SmallProjectModal v={v} />
       <ArcadeModal v={v} />
       <MealModal v={v} />
